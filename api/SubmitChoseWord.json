@@ -1,0 +1,42 @@
+{
+    "task_id": 95201383,
+    "word_map": {
+        "CET4_hx:CET4_hx_24": [
+            "claim",
+            "release",
+            "decrease",
+            "exception",
+            "permanent",
+            "emergency",
+            "strain",
+            "vessel",
+            "rhythm",
+            "apology",
+            "exhibit",
+            "ethic",
+            "exploit",
+            "shrink",
+            "pump",
+            "pile",
+            "rear",
+            "utter",
+            "slap",
+            "memorial",
+            "trigger",
+            "vain",
+            "surplus",
+            "religion",
+            "prime",
+            "wrist",
+            "condemn",
+            "occupy",
+            "considerate",
+            "chaos"
+        ]
+    },
+    "chose_err_item": 1,
+    "timestamp": 1716985930146,
+    "version": "2.6.4.240520",
+    "sign": "017597c91ea5e06102475696342fe130",
+    "app_type": 1
+}

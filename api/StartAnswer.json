@@ -1,0 +1,67 @@
+{
+    "task_id": 95201087,
+    "task_type": 1,
+    "topic_mode": 11,
+    "stem": {
+        "content": "Researchers  are  trying  to  get  at  the  same  information  through  an  indirect  {route}.",
+        "remark": "研究人员正试图通过间接的途径获得相同的信息。",
+        "ph_us_url": null,
+        "ph_en_url": null,
+        "au_addr": null
+    },
+    "options": [
+        {
+            "content": "noun 一回，的一次",
+            "remark": null,
+            "answer": null,
+            "answer_tag": 0,
+            "check_code": null,
+            "sub_options": null,
+            "ph_info": null
+        },
+        {
+            "content": "noun 一击；一笔",
+            "remark": null,
+            "answer": null,
+            "answer_tag": 1,
+            "check_code": null,
+            "sub_options": null,
+            "ph_info": null
+        },
+        {
+            "content": "noun 道路；航线；路线",
+            "remark": null,
+            "answer": null,
+            "answer_tag": 2,
+            "check_code": null,
+            "sub_options": null,
+            "ph_info": null
+        },
+        {
+            "content": "noun 方法；途径",
+            "remark": null,
+            "answer": null,
+            "answer_tag": 3,
+            "check_code": null,
+            "sub_options": null,
+            "ph_info": null
+        }
+    ],
+    "sound_mark": "",
+    "ph_en": "",
+    "ph_us": "",
+    "answer_num": 1,
+    "chance_num": 1,
+    "topic_done_num": 53,
+    "topic_total": 227,
+    "w_lens": [],
+    "w_len": 0,
+    "w_tip": "",
+    "tips": "",
+    "word_type": 1,
+    "enable_i": 2,
+    "enable_i_i": 2,
+    "enable_i_o": 2,
+    "topic_code": "klt1eIxmlsrZVlyHeHuLbJehqpeUa1liWqioq6nKhmJlko9qbGqVaWWNZpVekr+NZVyWYWduaW5yaWuWa2praG1lkZKRmWlgk5VwYG6baWxqZW9eaI6aaWKVZmZvb2RqZ26Wamltam9laGaenGllko9pkQ==",
+    "answer_state": 1
+}

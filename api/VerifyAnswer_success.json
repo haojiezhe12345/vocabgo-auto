@@ -1,0 +1,10 @@
+{
+    "word": "choke",
+    "topic_code": "klt1eIxmlsrZVlyHeHuLbJehqpeUa1liWpmhpaDKhmJlko9qbGqWb2WNZJVekr+NZVyWYWduaW5yaWqWa21ocGplkZCVwWKPksCWYGyTY2tkamRpcJSUbGKcYWdjcW1rYmmScG5iaWtvameXm2htjZVqbW+VaGpeY5U=",
+    "over_status": 1,
+    "answer_result": 1, // 回答情况：1=正确，2=错误
+    "clean_status": 2,
+    "answer_corrects": [
+        1
+    ]
+}
