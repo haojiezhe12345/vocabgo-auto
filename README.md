@@ -13,7 +13,12 @@
 
 ## 准备工作
 
+#### 程序
 - 下载程序本体 [main.py](./main.py), 仅此一个文件, 其他都不需要下载
+- 安装 `python` (如果没有)
+- 安装 `requests` 模块, 安装命令: `pip install requests`
+
+#### 抓包
 - 下载一个 `HTTP抓包软件`, 如 [Fiddler (需付费)](http://www.fiddler2.com/fiddler2/), [HTTP Toolkit (半免费)](http://httptoolkit.com/)
 - 安装抓包软件的 `根证书`, 使抓包软件可以截获 `HTTPS` 流量
   - 对于 `Fiddler 4` , 点击 `Tools`→`Options`→`HTTPS` 设置面板可以安装根证书
