@@ -155,10 +155,16 @@ def start(task_id, release_id):
             print('ERROR getting answer!')
             return
 
+    print(f'积分：+{topic.get('integral')}\n能量包：+{topic.get('energy_pack')}')
+
 
 if __name__ == '__main__':
     # 获取任务
     tasks = getPageTask()
+    if not tasks:
+        print('获取班级任务失败！请检查 UserToken')
+        input()
+        exit()
 
     # 选择任务
     for i in range(len(tasks['records'])):
@@ -171,3 +177,5 @@ if __name__ == '__main__':
     submitChoseWord_All(selectedTask['task_id'])
     # 自动刷题
     start(selectedTask['task_id'], selectedTask['release_id'])
+
+    input()
