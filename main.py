@@ -42,9 +42,9 @@ def decodeData(data: str):
 class vocabgoAdapter(requests.adapters.HTTPAdapter):
     def send(self, request: requests.PreparedRequest, **kwargs):
         # kwargs['verify'] = False
-        print(f'\n-> {request.method} {request.url}\n{getPrettyJSON(request.body)}')
+        print(f"\n-> {request.method} {request.url}\n{getPrettyJSON(request.body)}")
         response = super().send(request, **kwargs)
-        print(f'<- {response.status_code}\n{getPrettyJSON(decodeData(response.json()['data']))}')
+        print(f"<- {response.status_code}\n{getPrettyJSON(decodeData(response.json()['data']))}")
         return response
 
 
@@ -79,7 +79,7 @@ def submitChoseWord_All(task_id: int):
     r = session.post('https://app.vocabgo.com/studentv1/api/Student/ClassTask/SubmitChoseWord', json={
         "task_id": task_id,
         "word_map": {
-            f'{word_list[0]['course_id']}:{word_list[0]['list_id']}': [w['word'] for w in word_list]
+            f"{word_list[0]['course_id']}:{word_list[0]['list_id']}": [w['word'] for w in word_list]
         },
         "chose_err_item": 1,
         "reset_chose_words": 1,  # 重新选词（放弃现有进度，重新练习）
@@ -99,7 +99,7 @@ def startAnswer(task_id: int, release_id: int):
 
 # 验证答案
 # 传入当前题目的 topic_code，验证答案后返回新的 topic_code
-def verifyAnswer(topic_code: str, answer: int | str):
+def verifyAnswer(topic_code: str, answer):
     r = session.post('https://app.vocabgo.com/studentv1/api/Student/ClassTask/VerifyAnswer', json={
         "answer": answer,
         "topic_code": topic_code,
@@ -155,7 +155,7 @@ def start(task_id, release_id):
             print('ERROR getting answer!')
             return
 
-    print(f'积分：+{topic.get('integral')}\n能量包：+{topic.get('energy_pack')}')
+    print(f"积分：+{topic.get('integral')}\n能量包：+{topic.get('energy_pack')}")
 
 
 if __name__ == '__main__':
@@ -169,7 +169,7 @@ if __name__ == '__main__':
     # 选择任务
     for i in range(len(tasks['records'])):
         task = tasks['records'][i]
-        print(f'{i}: {task['task_name']}  进度{task['progress']}%  得分{task['score']}')
+        print(f"{i}: {task['task_name']}  进度{task['progress']}%  得分{task['score']}")
 
     selectedTask = tasks['records'][int(input('选择任务：'))]
 
