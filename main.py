@@ -144,16 +144,15 @@ def start(task_id, release_id):
             answer = verify['answer_corrects'][0]
             # 短语排序，把空格换成逗号，并去掉可能存在的省略号
             if (topic['topic_mode'] == 32):
-                verify = verifyAnswer(topic['topic_code'], ','.join(answer.replace('.', '').replace('…', '').strip().split()))
+                verify = verifyAnswer(topic['topic_code'], ','.join(answer.replace('...', '').replace('…', '').strip().split()))
             # 其他题型可直接用答案
             else:
                 verify = verifyAnswer(topic['topic_code'], answer)
         # 验证答案是否正确
-        if verify['answer_result'] == 1:
-            topic = submitAnswerAndSave(verify['topic_code'])
-        else:
-            print('ERROR getting answer!')
-            return
+        if verify['answer_result'] != 1:
+            input('获取答案错误, 请按回车跳过该题\n可将上下文发送给开发者，以便修复bug')
+
+        topic = submitAnswerAndSave(verify['topic_code'])
 
     print(f"积分：+{topic.get('integral')}\n能量包：+{topic.get('energy_pack')}")
 
